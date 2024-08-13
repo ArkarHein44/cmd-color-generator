@@ -139,9 +139,9 @@ lastBgColorIndex = bgcolor.selectedIndex;
 
 
 fgcolor.addEventListener('change',function fgcolorchange(){
-  let fgindex = fgcolor.options[fgcolor.selectedIndex];
+  let fgindex = fgcolor.options[fgcolor.selectedIndex].value;
   // console.log(fgindex);
-  let ansifgs = ansicolors.colors[fgindex.value].foreground;
+  let ansifgs = ansicolors.colors[fgindex].foreground;
   // console.log(ansifgs);
 
   preview.style.color = ansifgs;
@@ -153,10 +153,10 @@ fgcolor.addEventListener('change',function fgcolorchange(){
 
   if (lastFgColorIndex !== null) {
     bgcolor.options[lastFgColorIndex].removeAttribute("disabled");
-}
+  }
 
-bgcolor.options[fgcolor.selectedIndex].setAttribute("disabled", "");
-lastFgColorIndex = fgcolor.selectedIndex;
+  bgcolor.options[fgcolor.selectedIndex].setAttribute("disabled", "");
+  lastFgColorIndex = fgcolor.selectedIndex;
  
 });
 
