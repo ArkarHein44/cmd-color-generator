@@ -1,4 +1,5 @@
 
+// Get From UI 
 
 let preview = document.getElementById("preview"),
     bgcolor = document.getElementById("bgcolor"),
@@ -16,7 +17,7 @@ let preview = document.getElementById("preview"),
 // console.log(txtcolor); // select#txtcolor
 // console.log(bgcolor.options[1].value); // #000
 
-
+// Get Year & sent to footer 
 function showyear(){
     let year = document.getElementById("year");
     // console.log(year);
@@ -30,6 +31,7 @@ function showyear(){
 
 showyear();
 
+// ANSI color json 
 const ansicolors = {
   "colors": {
     "0": {
@@ -116,6 +118,7 @@ const ansicolors = {
 }
 // console.log(ansicolors);
 
+// background change & comand change & disabled selected option 
 bgcolor.addEventListener('change',function bgcolorchange(){
   let bgindex = bgcolor.options[bgcolor.selectedIndex].value;
   let ansibgs = ansicolors.colors[bgindex].background;
@@ -137,7 +140,7 @@ lastBgColorIndex = bgcolor.selectedIndex;
 
 });
 
-
+// foreground change & comand change & disabled selected option 
 fgcolor.addEventListener('change',function fgcolorchange(){
   let fgindex = fgcolor.options[fgcolor.selectedIndex].value;
   // console.log(fgindex);
@@ -160,8 +163,7 @@ fgcolor.addEventListener('change',function fgcolorchange(){
  
 });
 
-
-
+// Modal open button & close button
 let closebtn = document.querySelector(".btn-close");
 // console.log(closebtn);
 let documentbtn = document.getElementById("doc-btn");

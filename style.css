@@ -47,6 +47,8 @@ body{
     border-radius: 5px 5px 0 0;
 }
 
+/* header  */
+
 header{
     width: 100%;
     font-family: "Segoe UI";
@@ -93,6 +95,8 @@ header h1{
     box-shadow: 5px 5px 5px blue;
 }
 
+/* preview  */
+
 .preview{
     width: 600px;
     height: 500px;
@@ -117,6 +121,22 @@ header h1{
     padding: 0;
 
 }
+
+.preview p{
+    padding: 0;
+    margin:0 10px;
+
+    font-family: 'consolasb';
+    font-size: 0.8rem;
+}
+
+pre{
+    font-family: 'consolasb';
+    font-size: 0.8rem;
+}
+
+
+/* preview cmd styling */
 
 .menubar{
     width: 600px;
@@ -200,19 +220,8 @@ header h1{
     margin-left: 5px;
 }
 
-.preview p{
-    padding: 0;
-    margin:0 10px;
 
-    font-family: 'consolasb';
-    font-size: 0.8rem;
-}
-
-pre{
-    font-family: 'consolasb';
-    font-size: 0.8rem;
-}
-
+/* control pannel  */
 .control-pannel{
     width: 90%;
     height: 40px;
@@ -243,6 +252,7 @@ select:hover{
     color: #fff;
 }
 
+/* footer  */
 footer{
     width: 800px;
     text-align: center;
@@ -272,8 +282,11 @@ footer{
     text-decoration: underline;
 }
 
+/* Cursor styling and blink animation */
+
 .cursor{
     animation: blink 1s step-end infinite;
+    color: #fff;
 }
 
 @keyframes blink{
@@ -285,6 +298,10 @@ footer{
     }
 }
 
+
+/* Modal Boxs styling */
+
+/* Document Modal  */
 .document{
     font-family: "Segoe UI";
     width: 500px;
@@ -346,6 +363,7 @@ footer{
     color: #000;
 }
 
+/* About Modal  */
 .about{
     width: 400px;
     background-color: #ddd;
