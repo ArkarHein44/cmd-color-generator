@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD color generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fontawsome.newwaymm.com/fontawesome-pro-6/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CMD color generator</h1>
+          
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="nav-link" id="doc-btn">document</li>
+                    <li class="nav-link" id="contact">Contact</li>
+                </ul>
+            </div> 
+
+        </header>
+
+        <div class="menubar">
+            <div class="currenttag">
+                <div class="tag-info">
+                    <img style="margin-left: 10px;" src="./src/icon/cmd.jpg" width="16px" alt="cmdicon">
+                    <p style="margin-left: 10px;">C:\WINDOWS\system32\cmd.exe</p>   
+                    <button type="button" class="tagclose-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                
+                <div class="tagbtn">
+                    <button type="button" class="new-btn"><i class="fa-thin fa-plus"></i></button>
+                    <button type="button" class="dropdwon-btn"><i class="fa-thin fa-chevron-down"></i></button>
+                </div>
+               
+            </div>
+           
+            <div class="menu-buttons">
+                <button type="button" class="min-btn"><i class="fa-thin fa-window-minimize"></i></button>
+                <button type="button" class="max-btn"><i class="fa-light fa-square"></i></button>
+                <button type="button" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+        </div>
+
+        <div class="preview" id="preview">
+            <p>Microsoft Windows [Version 10.0.22631.3880]</p>
+            <p>(c) Microsoft Corporation. All rights reserved.</p>
+        <div>
+<code>
+    <pre>
+  C:\Users\acer>color help
+  Sets the default console foreground and background colors.<br/>
+                        
+  COLOR [attr]
+                        
+    attr        Specifies color attribute of console output
+                        
+  Color attributes are specified by TWO hex digits -- the first
+  corresponds to the background; the second the foreground.  Each digit
+  can be any of the following values:
+                        
+          0 = Black       8 = Gray
+          1 = Blue        9 = Light Blue
+          2 = Green       A = Light Green
+          3 = Aqua        B = Light Aqua
+          4 = Red         C = Light Red
+          5 = Purple      D = Light Purple
+          6 = Yellow      E = Light Yellow
+          7 = White       F = Bright White
+                        
+  If no argument is given, this command restores the color to what it was
+  when CMD.EXE started.  This value either comes from the current console
+  window, the /T command line switch or from the DefaultColor registry
+  value.
+                        
+  The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
+  the COLOR command with a foreground and background color that are the
+  same.
+              
+  Press
+  Example: "COLOR fc" produces light red on bright white 
+
+  C:\Users\acer>COLOR <span id="bgcode">0</span><span id="txtcode">7</span><span class="cursor">|</span></p> 
+    </pre>
+</code>
+</div>                
+        </div>
+
+        <div class="control-pannel">
+            <form action="" method="" enctype="multipart/form-data">
+                <label for="bgcolor">Background Color</label>
+                <select name="bgcolor" id="bgcolor">
+                    <option selected disabled value="0">choose color</option>
+                    <option style="background-color: #0c0c0c; color: #fff;" value="0">0 Black</option>
+                    <option style="background-color: #0037da; color: #fff;" value="1">1 Blue</option>
+                    <option style="background-color: #13a10e; color: #000" value="2">2 Green</option>
+                    <option style="background-color: #3a96dd; color: #000;" value="3">3 Aqua</option>
+                    <option style="background-color: #c50f1f; color: #fff;" value="4">4 Red</option>
+                    <option style="background-color: #881798; color: #fff;" value="5">5 Purple</option>
+                    <option style="background-color: #c19c00; color: #000;" value="6">6 Yellow</option>
+                    <option style="background-color: #cccccc; color: #000;" value="7">7 White</option>
+                    <option style="background-color: #767676; color: #fff;" value="8">8 Gray</option>
+                    <option style="background-color: #3b78ff; color: #000;" value="9">9 Light Blue</option>
+                    <option style="background-color: #16c60c; color: #000;" value="A">A Light Green</option>
+                    <option style="background-color: #61d6d6; color: #000;" value="B">B Light Aqua</option>
+                    <option style="background-color: #e74856; color: #000;" value="C">C Light Red</option>
+                    <option style="background-color: #b4009e; color: #000;" value="D">D Light Purple</option>
+                    <option style="background-color: #f9f1a5; color: #000;" value="E">E Light Yellow</option>
+                    <option style="background-color: #f2f2f2; color: #000;" value="F">F Bright White</option>
+                </select>
+
+                <label for="fgcolor">Foreground Color</label>
+                <select name="fgcolor" id="fgcolor">
+                    <option selected disabled value="0">choose color</option>
+                    <option style="background-color: #0c0c0c; color: #fff;" value="0">0 Black</option>
+                    <option style="background-color: #0037da; color: #fff;" value="1">1 Blue</option>
+                    <option style="background-color: #13a10e; color: #000" value="2">2 Green</option>
+                    <option style="background-color: #3a96dd; color: #000;" value="3">3 Aqua</option>
+                    <option style="background-color: #c50f1f; color: #fff;" value="4">4 Red</option>
+                    <option style="background-color: #881798; color: #fff;" value="5">5 Purple</option>
+                    <option style="background-color: #c19c00; color: #000;" value="6">6 Yellow</option>
+                    <option style="background-color: #cccccc; color: #000;" value="7">7 White</option>
+                    <option style="background-color: #767676; color: #fff;" value="8">8 Gray</option>
+                    <option style="background-color: #3b78ff; color: #000;" value="9">9 Light Blue</option>
+                    <option style="background-color: #16c60c; color: #000;" value="A">A Light Green</option>
+                    <option style="background-color: #61d6d6; color: #000;" value="B">B Light Aqua</option>
+                    <option style="background-color: #e74856; color: #000;" value="C">C Light Red</option>
+                    <option style="background-color: #b4009e; color: #000;" value="D">D Light Purple</option>
+                    <option style="background-color: #f9f1a5; color: #000;" value="E">E Light Yellow</option>
+                    <option style="background-color: #f2f2f2; color: #000;" value="F">F Bright White</option>
+                </select>
+            </form>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <p><span id="year"></span> Copyright &copy; Arkar Hein</p>
+
+        <div class="contact">
+             <a href="mailto:arkerhein44@gmail.com">E-mail</a>
+            <span>|</span>
+            <a href="callto:+959775931603">Phone</a>
+            <span>|</span>
+            <a href="https://t.me/Ggwp4me">Telegram</a>
+        </div>
+       
+    </footer>
+
+    <div class="document">
+        <div class="modal-header">
+            <h4 style="color: royalblue;">CMD color generator documentation</h4>
+            <button type="button" class="btn-close" title="close document"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="modal-body">            
+            <p style="text-indent: 50px;">
+                One day, I was testing the color module in the Command Prompt (CMD) on Windows. CMD supports 16 colors for both the background and the foreground. However, using the same color values for both the background and foreground does not work.
+            </p>
+            <p style="text-indent: 50px;">
+                So, it's a total of 240 possible color pairs. I don't want to type color comands for 240 pairs.Then I got an idea and I want to test my classic web developnment knowledge.
+            </p>
+            <p style="text-indent: 50px;">
+                To address this, I created an app to test different color pairs. The app allows you to experiment with various background and foreground color combinations.
+            </p>         
+
+            <ul><h4 style="color: red;text-decoration: underline;padding:0;margin:0;">Disclaimer</h4>
+                <li> <p style="color: rgb(189, 7, 7);">
+                    I found that colors for the background and foreground need to be carefully matched, as ANSI colors used in CMD cannot be directly translated into CSS for web applications.
+                </p></li>
+            </ol>
+        </div>
+        <div class="modal-footer">
+            <p><span id="year"></span> Copyright &copy; Arkar Hein</p>
+
+            <div class="contact">
+                 <a href="mailto:arkerhein44@gmail.com">E-mail</a>
+                <span>|</span>
+                <a href="callto:+959775931603">Phone</a>
+                <span>|</span>
+                <a href="https://t.me/Ggwp4me">Telegram</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="about-header">
+            <button type="button" class="btn-close-2" title="close contact"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <h2>Hi! I'm <span class="arkarhein">Arkar Hein</span>.</h2>
+        <h4>Web Developer From Myanmar</h4>
+        <p style="text-align: justify; text-indent: 50px;">Hello! I'm a dedicated web developer with a strong foundation in front-end technologies and currently expanding my skill set to become a full-stack developer. My journey includes mastering various tools and technologies, with the ultimate goal of gaining expertise in both front-end and back-end development.</p>
+
+        <p style="text-decoration: underline;">How to read me</p>
+        <div class="btn">
+            
+            <button type="button"><a href="mailto:arkerhein44@gmail.com"><i class="fa-duotone fa-solid fa-envelope"></i></a></button>
+            <button type="button"><a href="callto:+959775931603"><i class="fa-duotone fa-solid fa-phone"></i></a></button>
+            <button type="button"><a href="https://t.me/Ggwp4me"><i class="fa-brands fa-telegram"></i></a></button>
+        </div>
+        
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>

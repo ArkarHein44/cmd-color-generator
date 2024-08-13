@@ -1,0 +1,85 @@
+{
+    "colors": {
+      "0": {
+        "name": "Black",
+        "foreground": "#0c0c0c",  
+        "background": "#0c0c0c"     
+      },
+      "1": {
+        "name": "Blue",
+        "foreground": "#0037da",  
+        "background": "#0037da"    
+      },
+      "2": {
+        "name": "Green",
+        "foreground": "#13a10e",  
+        "background": "#13a10e"     
+      },
+      "3": {
+        "name": "Aqua",
+        "foreground": "#3a96dd",  
+        "background": "#3a96dd"    
+      },
+      "4": {
+        "name": "Red",
+        "foreground": "#c50f1f",  
+        "background": "#c50f1f"     
+      },
+      "5": {
+        "name": "Purple",
+        "foreground": "#881798",  
+        "background": "#881798"     
+      },
+      "6": {
+        "name": "Yellow",
+        "foreground": "#c19c00",  
+        "background": "#c19c00"     
+      },
+      "7": {
+        "name": "White",
+        "foreground": "#cccccc",  
+        "background": "#cccccc"     
+      },
+      "8": {
+        "name": "Gray",
+        "foreground": "#767676",  
+        "background": "#767676"     
+      },
+      "9": {
+        "name": "Light Blue",
+        "foreground": "#3b78ff",  
+        "background": "#3b78ff"     
+      },
+      "A": {
+        "name": "Light Green",
+        "foreground": "#16c60c",  
+        "background": "#16c60c"     
+      },
+      "B": {
+        "name": "Light Aqua",
+        "foreground": "#61d6d6",  
+        "background": "#61d6d6"     
+      },
+      "C": {
+        "name": "Light Red",
+        "foreground": "#e74856",  
+        "background": "#e74856"     
+      },
+      "D": {
+        "name": "Light Purple",
+        "foreground": "#b4009e",  
+        "background": "#b4009e"     
+      },
+      "E": {
+        "name": "Light Yellow",
+        "foreground": "#f9f1a5", 
+        "background": "#f9f1a5"     
+      },
+      "F": {
+        "name": "Bright White",
+        "foreground": "#f2f2f2",  
+        "background": "#f2f2f2"     
+      }
+    }
+  }
+  
